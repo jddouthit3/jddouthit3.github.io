@@ -1,0 +1,89 @@
+/* @import url("https://use.typekit.net/dqg7rnn.css"); */
+@import url("https://use.typekit.net/dqg7rnn.css");
+
+
+/* links */
+a {
+  color: #35605A;
+}
+
+a:hover {
+  color: #101935;
+}
+
+/* text */
+body {
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: mixta-sharp, serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+/*lists */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* navigation bar */
+.topnav {
+  background-color: #101935;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.topnav a {
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:#FFFFFF;
+  color: #35605A;
+  font-weight:600
+}
+
+.intro {
+  text-align: center;
+  padding-top:75px;
+}
+
+/* weird icons and horizontal bars */
+hr {
+  width: 50%;
+  height: 5px;
+  background-color: #9C7178;
+}
+
+br {
+  height:500px
+}
+
+/* imageuse */
+body {
+  background-image: url('/img/ghostjohn.jpg');
+  background-size: 1920px;
+}
+.gallery img {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 300px;
+  float: left;
+  width: 300px;
+  padding-left: 50px;
+  padding-top: 30px;
+}
