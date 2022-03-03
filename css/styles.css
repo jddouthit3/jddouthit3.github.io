@@ -35,12 +35,13 @@ ul {
 }
 
 /* navigation bar */
+
+
 .topnav {
-  background-color: #101935;
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: right;
+  gap: 25px;
 }
 
 .topnav a {
@@ -53,8 +54,9 @@ ul {
 
 .topnav a:hover {
   background-color:#FFFFFF;
-  color: #35605A;
-  font-weight:600
+  border-radius: 15px 70px 30px;
+  color: #101935;
+  font-weight:600;
 }
 
 .intro {
@@ -62,6 +64,9 @@ ul {
   padding-top:75px;
 }
 
+.intro h1 {
+  font-size: 150px;
+}
 /* weird icons and horizontal bars */
 hr {
   width: 50%;
@@ -72,12 +77,19 @@ hr {
 br {
   height:500px
 }
+.homepage {
+  background-image:
+    linear-gradient(
+      to left,
+      #101935, #ffffff 60%
+    );
+}
+
 
 /* imageuse */
-body {
-  background-image: url('/img/ghostjohn.jpg');
-  background-size: 1920px;
-}
+
+
+
 .galleryrow {
   display: flex;
   flex-wrap: wrap;
@@ -113,3 +125,13 @@ body {
     max-width: 100%;
   }
 }
+
+/*media queries - mobile */
+
+@media screen and (min-width: 600px) {
+  .intro img {
+    flex: 100%;
+    max-width: 30%;
+    float: left;
+    padding: 0em 0em 0em 2em;
+  }
