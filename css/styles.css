@@ -17,6 +17,8 @@ body {
   font-weight: 400;
   font-style: normal;
   color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,29 +29,22 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
 }
 
-/*lists */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 /* navigation bar */
-
 
 .topnav {
   overflow: hidden;
+  width: 100%;
   display: flex;
   justify-content: right;
-  gap: 25px;
+
 }
 
 .topnav a {
   color: #FFFFFF;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  text-align: center;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
 }
 
 .topnav a:hover {
@@ -59,24 +54,46 @@ ul {
   font-weight:600;
 }
 
+.intro h1 {
+  font-size: 8rem;
+}
 .intro {
-  text-align: center;
+  justify-content: center;
+  align-content: space-between;
+  display: flex;
   padding-top:75px;
 }
 
-.intro h1 {
-  font-size: 150px;
+.intro-text {
+  display: flex;
+  overflow: visible;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 1em 1em 1em;
+
 }
+
+.intro img {
+  width: 100%;
+  max-width:500px;
+}
+
 /* weird icons and horizontal bars */
 hr {
   width: 50%;
   height: 5px;
   background-color: #9C7178;
+  border-style: none;
 }
 
 br {
   height:500px
 }
+
+/*background gradients */
+
+
 .homepage {
   background-image:
     linear-gradient(
@@ -85,53 +102,100 @@ br {
     );
 }
 
-
-/* imageuse */
-
-
-
-.galleryrow {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 20px;
-  justify-content: center;
+.art {
+  background-image:
+    linear-gradient(
+      to left,
+      #9C7178, #ffffff 60%
+      );
 }
 
-/* Create three equal columns that sits next to each other */
-.gallerycolumn {
-  flex: 25%;
-  max-width: 33.33%;
-  padding: 0 20px;
+.music {
+  background-image:
+    linear-gradient(
+      to left,
+      #35605A, #ffffff 60%
+      );
 }
 
-.gallerycolumn img {
+.contact {
+  background-image:
+    radial-gradient(
+      #35605A, #101935
+      );
+}
+
+
+.row img {
   margin-top: 20px;
   vertical-align: middle;
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .gallerycolumn {
-    flex: 50%;
-    max-width: 50%;
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .column {
+    width: 100%;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
 
 /*media queries - mobile */
-
-@media screen and (min-width: 600px) {
-  .intro img {
-    flex: 100%;
-    max-width: 30%;
-    float: left;
-    padding: 0em 0em 0em 2em;
+@media screen and (max-width: 400px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+  .intro h1 {
+    font-size: 5rem;
+  }
+
+  .intro img {
+    width: 100%;
+    float: right;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .intro-text {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    white-space: normal;
+    text-wrap: wrap;
+    overflow: visible;
+    padding: 0rem 0rem 0rem 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav {
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    padding: 0rem 0rem 0rem 1rem;
+  }
+
+  .topnav a {
+      color: #000000;
+      }
+
+}
