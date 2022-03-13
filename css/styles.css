@@ -11,6 +11,10 @@ a:hover {
   color: #35605A;
 }
 
+a:visited {
+  color: #9C7178;
+}
+
 /* text */
 body {
   font-family: montserrat, sans-serif;
@@ -334,6 +338,14 @@ br {
       #101935, #ffffff 60%
       );
   box-shadow: -1rem 0 3rem #ffffff;
+}
+
+.container h3:hover {
+  color: #35605A
+}
+
+.container a:visited {
+  color: #9c7178
 }
 
 @media screen and (max-width: 400px) {
