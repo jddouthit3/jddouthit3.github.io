@@ -49,6 +49,20 @@ h4 {
   font-size: 150%;
 }
 
+button {
+  background-color: #9C7178;
+  border: none;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
 /* navigation bar */
 .topnav {
   overflow: hidden;
@@ -59,7 +73,7 @@ h4 {
 }
 
 .topnav a {
-  color: #FFFFFF;
+  color: #000000;
   text-decoration: none;
   text-align: center;
   padding: 0.9rem 1rem;
@@ -183,6 +197,14 @@ br {
       );
 }
 .contact {
+  background-image:
+    linear-gradient(
+      to left,
+      #9C7178, #ffffff 60%
+      );
+}
+
+.assignment {
   background-image:
     linear-gradient(
       to left,
