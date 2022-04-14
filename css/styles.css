@@ -66,7 +66,6 @@ button {
 /* navigation bar */
 .topnav {
   overflow: hidden;
-  width: 100%;
   display: flex;
   justify-content: right;
 
@@ -213,27 +212,11 @@ br {
 }
 
 /* Art gallery*/
-.art h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
-
-.art img {
-  filter: opacity(90%);
-
-}
-
-.art img:hover {
-  filter: opacity(100%);
-  transition: all 0.1s ease-out 0.1s;
-  filter: drop-shadow(8px 8px 5px #9C7178);
-}
 
 .row {
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .column {
@@ -245,6 +228,32 @@ br {
   vertical-align: middle;
   width: 100%;
 }
+
+.art h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.art img {
+  filter: opacity(90%);
+}
+
+.art img:hover {
+  filter: opacity(100%);
+  transition: all 0.1s ease-out 0.1s;
+  filter: drop-shadow(8px 8px 5px #9C7178);
+  width: 150%;
+  overflow: visible;
+  justify-content:space-around;
+}
+
+.column:hover {
+  max-width:50%;
+  flex: 50%
+}
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
@@ -395,7 +404,8 @@ br {
 
 /* Contact */
 .contact-container {
-  display: flex;
+  //make fixed
+  display: fixed;
   background-color: #ffffff;
   align-content: center;
   justify-content: center;
