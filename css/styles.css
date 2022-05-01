@@ -464,3 +464,55 @@ br {
     flex-direction: column;
   }
 }
+
+/* Drum Kit */
+
+
+.kit{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.drum {
+    width: 200px;
+    height: 150px;
+    background: #9C7178 ;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/*Drum kit border stuff */
+.borderTransform{
+  transform: scale(1.25);
+  border: 6px solid #35605A;
+}
+
+.kit div h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.kit div h3 {
+  font-size: 19px;
+}
+
+@media screen and (max-width: 400px) {
+  .kit {
+      display: flex;
+      width: 100%;
+      height: 400px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+  }
+}
