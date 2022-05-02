@@ -4,16 +4,14 @@
 
 /* links */
 a {
-  color: #101935;
+  color: #32CBFF;
 }
 
 a:hover {
-  color: #35605A;
+  color: #A0EADE;
 }
 
-a:visited {
-  color: #9C7178;
-}
+
 
 /* text */
 body {
@@ -112,6 +110,7 @@ button {
 }
 
 .intro-text {
+  font-size: 1.3rem;
   display: flex;
   overflow: visible;
   flex-direction: column;
@@ -209,6 +208,15 @@ br {
       to left,
       #9C7178, #ffffff 60%
       );
+}
+
+#finalProject {
+  background-image:
+  linear-gradient(
+    to right,
+    #ffffff, #ffffff 99%
+    );
+}
 }
 
 /* Art gallery*/
@@ -364,7 +372,7 @@ br {
   background-image:
     linear-gradient(
       to right,
-      #101935, #ffffff 60%
+      #35605A, #ffffff 60%
       );
   box-shadow: -1rem 0 3rem #101935;
   border-radius: 25px;
@@ -381,7 +389,7 @@ br {
   background-image:
     linear-gradient(
       to left,
-      #101935, #ffffff 60%
+      #35605A, #ffffff 60%
       );
   box-shadow: -1rem 0 3rem #ffffff;
 }
@@ -424,8 +432,7 @@ br {
   background-color: #ffffff;
   align-content: center;
   justify-content: center;
-  flex-direction: column;
-  margin: 128px 560px 112px 560px;
+  margin: 8rem;
   padding: 32px 64px 32px 64px;
   box-shadow: -1rem 0 3rem #9C7178;
   border-radius: 25px;
@@ -440,20 +447,23 @@ br {
 }
 
 .contact-item1 {
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 16px;
 }
 
 .contact-item2 {
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 16px;
 }
 
 .contact-item2 {
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 16px;
 }
 
 @media screen and (max-width: 400px) {
   .contact-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 8rem 1rem 0rem 1rem;
     padding: 2rem 4rem 2rem 4rem;
     color: black;
@@ -480,14 +490,18 @@ br {
 
 .drum {
     width: 200px;
-    height: 150px;
+    height: 200px;
     background: #9C7178 ;
     margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     border-radius: 5px;
+}
+
+.kit img {
+  max-width: 75px;
 }
 
 /*Drum kit border stuff */
@@ -503,6 +517,10 @@ br {
 
 .kit div h3 {
   font-size: 19px;
+}
+
+.kit img {
+  max-width: 100px;
 }
 
 @media screen and (max-width: 400px) {
