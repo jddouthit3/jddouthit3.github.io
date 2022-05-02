@@ -307,6 +307,13 @@ br {
 
 }
 
+@media screen and (max-width: 1300px) {
+  .column2 img {
+    width: 400px;
+    height: auto
+  }
+}
+
 .column3 {
   display: flex;
   flex: 2;
