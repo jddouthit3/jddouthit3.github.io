@@ -316,7 +316,7 @@ br {
 
 @media screen and (max-width: 1000px) {
   .column2 img {
-    width: 150px;
+    width: 200px;
     height: auto
   }
 }
