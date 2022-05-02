@@ -255,26 +255,11 @@ br {
 }
 
 .art img {
-  filter: opacity(90%);
+  filter: opacity(50%);
 }
 
 .art img:hover {
   filter: opacity(100%);
-  transition: all 0.1s ease-out 1s;
-  overflow: visible;
-  justify-content:space-around;
-  position:relative;
-  top:-25px;
-  left:-35px;
-  width:200px;
-  height:auto;
-  display:block;
-  z-index:999;
-}
-
-.column:hover {
-  max-width:50%;
-  flex: 50%
 }
 
 
