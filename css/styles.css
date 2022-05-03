@@ -88,7 +88,7 @@ button {
   font-weight:800;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .topnav {
     overflow: hidden;
     display: flex;
