@@ -75,23 +75,26 @@ button {
   text-align: center;
   padding: 0.9rem 1rem;
   font-size: 1rem;
-  transition: all 0.25s ease-out 0.15s;
 }
 
 .topnav a:hover {
   background-color:#FFFFFF;
+  transition: background-color 1s ease-out 0.15s;
   border-radius: 15px 70px 30px;
+}
+
+.topnav a:hover {
   color: #101935;
-  font-weight:600;
+  font-weight:800;
 }
 
 @media screen and (max-width: 400px) {
   .topnav {
     overflow: hidden;
     display: flex;
-    justify-content: right;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-    padding: 0rem 0rem 0rem 1.2rem;
   }
   .topnav a {
       color: #000000;
